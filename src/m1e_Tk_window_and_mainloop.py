@@ -7,7 +7,7 @@ A window should pop up.  That's all for this demo.
 
 Authors: David Mutchler, Mark Hays, Michael Wollowswki, Matt Boutell,
          Chandan Rupakheti, Claude Anderson and their colleagues
-         at Rose-Hulman Institute of Technology. Summer 2016.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter
@@ -20,9 +20,8 @@ def main():
 
     print('Done with the Event Loop')  # Note when this line runs.
 
+
 # ----------------------------------------------------------------------
-# If this module is running at the top level (as opposed to being
-# imported by another module), then call the 'main' function.
+# Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
-if __name__ == '__main__':
-    main()
+main()

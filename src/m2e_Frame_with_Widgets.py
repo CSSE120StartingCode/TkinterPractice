@@ -5,7 +5,7 @@ Example showing for tkinter and ttk:
   -- ttk.Button - a button in the ttk style
 
 Authors: David Mutchler, Mark Hays, and their colleagues
-         at Rose-Hulman Institute of Technology. Summer 2016.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter
@@ -67,9 +67,8 @@ def main():
 #        You'll see how to do that in the next examples.
 ########################################################################
 
+
 # ----------------------------------------------------------------------
-# If this module is running at the top level (as opposed to being
-# imported by another module), then call the 'main' function.
+# Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
-if __name__ == '__main__':
-    main()
+main()

@@ -4,7 +4,7 @@ Example showing for tkinter and ttk how to:
   -- Draw on a Canvas.
 
 Authors: David Mutchler and his colleagues
-         at Rose-Hulman Institute of Technology. January 2012.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter

@@ -4,7 +4,7 @@ Example showing for tkinter and ttk:
   -- The root window's mainloop - the Event Loop
 
 Authors: David Mutchler and his colleagues
-         at Rose-Hulman Institute of Technology. October 2012.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter
@@ -17,9 +17,8 @@ def main():
 
     print('Done with the Event Loop')
 
-#-----------------------------------------------------------------------
-# If this module is running at the top level (as opposed to being
-# imported by another module), then call the 'main' function.
-#-----------------------------------------------------------------------
-if __name__ == '__main__':
-    main()
+
+# ----------------------------------------------------------------------
+# Calls  main  to start the ball rolling.
+# ----------------------------------------------------------------------
+main()

@@ -10,7 +10,7 @@ Example showing for tkinter and ttk:
      but is EASY TO GET WRONG, so USE IT CAREFULLY (if at all).
 
 Authors: David Mutchler and his colleagues
-         at Rose-Hulman Institute of Technology. January 2012.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter

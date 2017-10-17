@@ -7,7 +7,7 @@ Example showing for tkinter and ttk:
        with a CALLBACK function that is a LAMBDA (anonymous) function.
 
 Authors: David Mutchler, Mark Hays, and their colleagues
-         at Rose-Hulman Institute of Technology. Summer 2016.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter
@@ -105,15 +105,14 @@ def do_stuff():
 #           button1['command'] = (lambda:
 #                                 foo())
 #
-#      We choose to use the two-line form because it makes it look
+#      Here we choose to use the two-line form because it makes it look
 #      more like a DEF and gives a bit more space on a line
 #      for the body of the lambda expression.
 #
 ########################################################################
 
+
 # ----------------------------------------------------------------------
-# If this module is running at the top level (as opposed to being
-# imported by another module), then call the 'main' function.
+# Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
-if __name__ == '__main__':
-    main()
+main()

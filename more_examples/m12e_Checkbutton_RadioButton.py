@@ -5,7 +5,7 @@ Example showing for tkinter and ttk:
   -- Using tkinter's StringVar, IntVar, DoubleVar to track changes
 
 Authors: David Mutchler and his colleagues
-         at Rose-Hulman Institute of Technology. January 2012.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter

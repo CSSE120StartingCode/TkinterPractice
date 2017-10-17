@@ -6,7 +6,7 @@ Example showing for tkinter and ttk how to:
         functions that are called when a menu item is selected.
 
 Authors: David Mutchler and his colleagues
-         at Rose-Hulman Institute of Technology. January 2012.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter

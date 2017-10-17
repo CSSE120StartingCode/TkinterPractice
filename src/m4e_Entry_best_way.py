@@ -18,7 +18,7 @@ that uses a CONTROL VARIABLE.  The more complicated alternative
 is sometimes more convenient but never necessary.
 
 Authors: David Mutchler, Mark Hays, and their colleagues
-         at Rose-Hulman Institute of Technology. Summer 2016.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter
@@ -129,9 +129,8 @@ def print_contents(entry_box):
 #
 ########################################################################
 
+
 # ----------------------------------------------------------------------
-# If this module is running at the top level (as opposed to being
-# imported by another module), then call the 'main' function.
+# Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
-if __name__ == '__main__':
-    main()
+main()

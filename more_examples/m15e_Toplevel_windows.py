@@ -3,7 +3,7 @@ Example showing for tkinter and ttk:
   -- How to use Tk and Toplevel to construct new windows.
 
 Authors: David Mutchler and his colleagues
-         at Rose-Hulman Institute of Technology. January 2013.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter

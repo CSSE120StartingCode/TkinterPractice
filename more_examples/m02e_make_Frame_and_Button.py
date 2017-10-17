@@ -5,7 +5,7 @@ Example showing for tkinter and ttk:
   -- ttk.Button - a button in the ttk style
 
 Authors: David Mutchler and his colleagues
-         at Rose-Hulman Institute of Technology. October 2012.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter

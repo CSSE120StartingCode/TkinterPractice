@@ -10,7 +10,7 @@ There is LOTS more you can do with layout,
 but the above will take you a long way.
 
 Authors: David Mutchler and his colleagues
-         at Rose-Hulman Institute of Technology. January 2013.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter

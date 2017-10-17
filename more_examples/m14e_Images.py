@@ -10,7 +10,7 @@ Note: The image file for tkinter/ttk must be a GIF (or one of several
       course web site (under the Graphics section) of Resources.
 
 Authors: David Mutchler and his colleagues
-         at Rose-Hulman Institute of Technology. January 2013.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter

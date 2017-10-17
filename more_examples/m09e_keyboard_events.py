@@ -13,7 +13,7 @@ That document is also available in html form at:
   http://infohost.nmt.edu/tcc/help/pubs/tkinter/events.html
 
 Authors: David Mutchler and his colleagues
-         at Rose-Hulman Institute of Technology. January 2012.
+         at Rose-Hulman Institute of Technology.
 """
 
 import tkinter
