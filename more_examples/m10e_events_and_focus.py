@@ -144,9 +144,8 @@ def callback3(event, data):
     print('  The number is now ' + str(data.number))
     data.number_label['text'] = 'The number is {}'.format(data.number)
 
-#------------------------------------------------------------------------
-# If this module is running at the top level (as opposed to being
-# imported by another module), then call the 'main' function.
-#------------------------------------------------------------------------
-if __name__ == '__main__':
-    main()
+
+# ----------------------------------------------------------------------
+# Calls  main  to start the ball rolling.
+# ----------------------------------------------------------------------
+main()
