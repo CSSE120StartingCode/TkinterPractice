@@ -65,7 +65,7 @@ def print_contents(entry_box):
 #        takes an ARGUMENT that is expected to be a ttk.Entry.
 #   -- The LAMBDA expression defines a function that calls
 #        the   print_contents   function, sending it the Entry box
-#        made a few lines above the lamda function as an argument.
+#        made a few lines above the lambda function as an argument.
 #   -- Hence, the Button can do stuff with the CONTENTS of the Entry box.
 #
 # To make a Button respond to a button-press by doing things with

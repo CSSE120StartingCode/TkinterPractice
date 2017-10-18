@@ -13,7 +13,7 @@ import tkinter
 from tkinter import ttk
 
 
-class Data():
+class Data(object):
     def __init__(self):
         self.number = 0
         self.number_label = None

@@ -24,7 +24,7 @@ import tkinter
 from tkinter import ttk
 
 
-class Data():
+class Data(object):
     def __init__(self):
         self.number = 0
         self.entry_box1 = None
@@ -41,15 +41,15 @@ def main():
     main_frame.grid()
 
     intro = 'This example shows how keys can be associated\n' \
-        + 'with widgets.  The widget must have the "focus"\n' \
-        + 'for its event to fire.\n\n' \
-        + 'In this example, the <Return> (Enter key) event\n' \
-        + 'is associated with each of the 2 Entry boxes,\n' \
-        + 'and the u and d keys and mouse press are associated\n' \
-        + 'with the button.\n\n' \
-        + 'Try the u and d keys, with and without the button having\n' \
-        + 'the focus.  Try entering numbers in the Entry boxes\n' \
-        + 'with and without pressing the Enter key.\n'
+            + 'with widgets.  The widget must have the "focus"\n' \
+            + 'for its event to fire.\n\n' \
+            + 'In this example, the <Return> (Enter key) event\n' \
+            + 'is associated with each of the 2 Entry boxes,\n' \
+            + 'and the u and d keys and mouse press are associated\n' \
+            + 'with the button.\n\n' \
+            + 'Try the u and d keys, with and without the button having\n' \
+            + 'the focus.  Try entering numbers in the Entry boxes\n' \
+            + 'with and without pressing the Enter key.\n'
     intro_label = ttk.Label(main_frame, text=intro)
     intro_label.grid()
 
@@ -58,12 +58,12 @@ def main():
     number_label.grid()
     data.number_label = number_label
 
-    #--------------------------------------------------------------------
+    # --------------------------------------------------------------------
     # In the previous module, you saw   bind_all   which binds the Event
     # to ALL the widgets on the root.  If you want the callback to occur
     # only when a certain Widget has the "focus" (and the Event occurs),
     # use   bind   (not bind_all), per the following examples:
-    #--------------------------------------------------------------------
+    # --------------------------------------------------------------------
 
     entry1 = ttk.Entry(main_frame, width=4)
     entry1.grid()
@@ -75,10 +75,10 @@ def main():
     entry2.bind('<Return>', lambda event: callback2(event, data))
     data.entry_box2 = entry2
 
-    #--------------------------------------------------------------------
+    # --------------------------------------------------------------------
     # You can bind Events to Buttons (and any other Widget).  So the
     # first   button.bind   below shows an alternative to ['command'].
-    #--------------------------------------------------------------------
+    # --------------------------------------------------------------------
 
     button_text = 'Use the TAB key to give me the "focus",'
     button_text = button_text + '\n then press the u or d key'

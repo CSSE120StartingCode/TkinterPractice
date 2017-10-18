@@ -93,7 +93,7 @@ def do_stuff():
 #      defines an anonymous (no-name) function that, when executed,
 #      simply calls the function named  foo  that is defined elsewhere.
 #
-#      Note that a lamda expression DEFINES a function that is EXECUTED
+#      Note that a lambda expression DEFINES a function that is EXECUTED
 #      LATER (here, when the Button is pressed).  It serves as a way
 #      to DEFINE a function INSIDE an assignment statement.
 #

@@ -40,7 +40,7 @@ def main():
     right_button['command'] = lambda: go_right()
     spin_button['command'] = lambda: spin()
 
-    #--------------------------------------------------------------------
+    # --------------------------------------------------------------------
     # For general-purpose keyboard events, use    root.bind_all(...).
     # This method "binds" (attaches) the given EVENT to the given
     # CALLBACK FUNCTION for ALL widgets on this root and its descendants.
@@ -51,11 +51,11 @@ def main():
     # use this to obtain details about the event.
     #
     # Try press, release, click and press-and-hold in the examples.
-    #--------------------------------------------------------------------
+    # --------------------------------------------------------------------
     root.bind_all('<KeyPress>', lambda event: pressed_a_key(event))
     root.bind_all('<KeyRelease>', lambda event: released_a_key(event))
 
-    #--------------------------------------------------------------------
+    # --------------------------------------------------------------------
     # To bind a particular key, simply specify the key (see below).
     #
     # WARNING: If you bind multiple functions to the same widget and
@@ -72,7 +72,7 @@ def main():
     # For other key names, see Section 30.5 in the document referenced
     # at the top of this module, and also perhaps Table 7.1 of
     #   www.pythonware.com/library/tkinter/introduction/events-and-bindings.htm
-    #--------------------------------------------------------------------------
+    # --------------------------------------------------------------------------
     root.bind_all('<Key-L>', lambda event: go_left(event))
     root.bind_all('<Key-R>', lambda event: go_right(event))
     root.bind_all('<Key-r>', lambda event: go_right(event))
@@ -105,7 +105,7 @@ def go_right(event=None):
     # The former provides the event, the latter does not.
     # It is UN-likely that you will want this fancier version.
     # Instead, use the SIMPLER version per   go_left.
-    if event == None:
+    if event is None:
         print('Button press: ', end='')
     else:
         print('You pressed the ' + event.keysym + ' key: ', end='')
@@ -114,7 +114,7 @@ def go_right(event=None):
 
 def spin(event=None):
     # Fancier version, see comment in   go_right.
-    if event == None:
+    if event is None:
         print('Button press: ', end='')
     else:
         print('You pressed the ' + event.keysym + ' key: ', end='')

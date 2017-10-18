@@ -11,7 +11,7 @@ import tkinter
 from tkinter import ttk
 
 
-class Pen_Data():
+class PenData(object):
     def __init__(self):
         self.color = 'blue'
         self.mouse_position_x = None
@@ -20,7 +20,7 @@ class Pen_Data():
 
 
 def main():
-    pen_data = Pen_Data()
+    pen_data = PenData()
 
     root = tkinter.Tk()
 

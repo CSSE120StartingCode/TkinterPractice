@@ -16,7 +16,7 @@ import tkinter
 from tkinter import ttk
 
 
-class Temperature():
+class Temperature(object):
     def __init__(self):
         self.entry_for_temperature = None
         self.label_for_temperature = None

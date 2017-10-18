@@ -10,7 +10,7 @@ import tkinter
 from tkinter import ttk
 
 
-class WindowsAndNumber():
+class WindowsAndNumber(object):
     def __init__(self):
         self.number = None
         self.label = None

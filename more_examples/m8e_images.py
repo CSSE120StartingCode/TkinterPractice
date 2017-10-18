@@ -6,7 +6,7 @@ Example showing for tkinter and ttk how to:
 Note: The image file for tkinter/ttk must be a GIF (or one of several
       other unhelpful formats).  PIL -- Python Imaging Library --
       is the standard library for converting images in Python.
-      An UNofficial port of PIL to Python 3 is available on the
+      An unofficial port of PIL to Python 3 is available on the
       course web site (under the Graphics section) of Resources.
 
 Authors: David Mutchler and his colleagues
