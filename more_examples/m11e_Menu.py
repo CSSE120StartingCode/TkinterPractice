@@ -81,6 +81,7 @@ def show(data, color):
     data.number_label['text'] = new_text
     data.number_label['background'] = color
 
+
 #------------------------------------------------------------------------
 # If this module is running at the top level (as opposed to being
 # imported by another module), then call the 'main' function.

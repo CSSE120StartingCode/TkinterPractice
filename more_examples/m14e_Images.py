@@ -27,7 +27,7 @@ def main():
     # formats). To convert a JPG or anything else, use an outside tool.
     # Note that the image file must be in the same folder as this
     # module, if you use this way to refer to the image file.
-    photo = tkinter.PhotoImage(file='CreateImage.gif')
+    photo = tkinter.PhotoImage(file='tkinter_mqtt_ev3.gif')
 
     button1 = ttk.Button(main_frame, image=photo)
     # The next line is necessary when your root.mainloop() call is outside the 
@@ -38,19 +38,12 @@ def main():
     button1.grid()
     button1['command'] = lambda: print('hello')
 
-    button2 = ttk.Button(main_frame, image=photo,
-                        text='Image PLUS text', compound='top')
-    #See note above for the reason the next line is needed.
-    button2.image = photo
-    button2.grid()
-    button2['command'] = lambda: print('goodbye')
-
     root.mainloop()
 
     
-#------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 # If this module is running at the top level (as opposed to being
 # imported by another module), then call the 'main' function.
-#------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 if __name__ == '__main__':
     main()

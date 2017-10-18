@@ -120,6 +120,7 @@ def spin(event=None):
         print('You pressed the ' + event.keysym + ' key: ', end='')
     print('Spin!')
 
+
 #------------------------------------------------------------------------
 # If this module is running at the top level (as opposed to being
 # imported by another module), then call the 'main' function.
