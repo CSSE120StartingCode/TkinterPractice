@@ -18,8 +18,8 @@ def main():
     frame1 = ttk.Frame(root, padding=10)
     frame1.grid()
 
-    connect_button = ttk.Button(frame1, text='Connect')
-    connect_button.grid()
+    go_forward_button = ttk.Button(frame1, text='Forward')
+    go_forward_button.grid()
 
     root.mainloop()
 
@@ -47,7 +47,7 @@ def main():
 #            to make it appear on the screen.
 #
 #   4. Constructs a widget (here, a ttk.Button) on the Frame.
-#         Set its text to 'Connect'.
+#         Set its text to 'Forward'.
 #
 #   5. Displays the ttk.Button, again using the 'grid' layout.
 #
@@ -60,10 +60,10 @@ def main():
 #   -- The window has the usual minimize, maximize and close buttons
 #        in the window's title bar.
 #   -- Those buttons work as expected.
-#   -- There is also a button inside the window whose label is: Connect.
-#   -- Pressing the Connect button causes visual feedback in the usual
+#   -- There is also a button inside the window whose label is: Forward.
+#   -- Pressing the Forward button causes visual feedback in the usual
 #        way, but nothing else happens.  That's because we haven't told
-#        tkinter/ttk what to do when the Connect button is pressed.
+#        tkinter/ttk what to do when the Forward button is pressed.
 #        You'll see how to do that in the next examples.
 ########################################################################
 
