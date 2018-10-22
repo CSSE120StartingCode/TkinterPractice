@@ -9,8 +9,8 @@ Authors: David Mutchler and his colleagues
          at Rose-Hulman Institute of Technology.
 """
 
-import tkinter
-from tkinter import ttk
+import Tkinter
+from Tkinter import ttk
 import random
 
 
@@ -24,7 +24,7 @@ def main():
     frame1.grid()
 
     # Label
-    label = ttk.Label(frame1, text='This is a Label above a Button')
+    label = ttk.Label(frame1, text='eco friendly red label')
     label.grid()
 
     # Two buttons
@@ -39,7 +39,7 @@ def main():
 
     # Another Label, with its text set another way
     label2 = ttk.Label(frame1)
-    label2['text'] = 'Later, we will put Labels BESIDE Buttons'
+    label2['text'] = 'Later tkinter label button besides button'
     label2.grid()
 
     root.mainloop()
