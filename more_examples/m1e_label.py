@@ -1,64 +1,64 @@
 """
-Example showing for tkinter and ttk:
+Example showing for tkinter and ttk(Object Oriented Approach) :
   -- ttk.Label
   -- ttk.Button
   -- ttk.Frame
   -- Associating a Button with a CALLBACK function
-
 Authors: David Mutchler and his colleagues
          at Rose-Hulman Institute of Technology.
 """
 
-import tkinter
-from tkinter import ttk
+from tkinter import *
 import random
+from tkinter import ttk
 
 
-def main():
-    # Root (main) window
-    root = tkinter.Tk()
-    root.title('Hello!')
+class Example(Tk):
+    def __init__(self, width, height):
+        super().__init__()
+        # Initial Variable Declaration and Assignment
 
-    # Frame
-    frame1 = ttk.Frame(root)
-    frame1.grid()
+        self.width = width
+        self.height = height
+        self.wm_geometry(f'{self.width}x{self.height}')
+        self.title('Hello!')
+        self.new_title = ''
 
-    # Label
-    label = ttk.Label(frame1, text='This is a Label above a Button')
-    label.grid()
+        # Widgets Creation and Placement
 
-    # Two buttons
-    change_title_button = ttk.Button(frame1,
-                                     text='Change the Title (above)')
-    change_title_button.grid()
-    change_title_button['command'] = lambda: change_title(root)
+        # Main Frame
+        self.frame_1 = ttk.Frame(self)
+        self.frame_1.grid()
 
-    quit_button = ttk.Button(frame1, text='Quit')
-    quit_button.grid()
-    quit_button['command'] = lambda: close_window(root)
+        # Label inside Frame
+        self.label_1 = ttk.Label(self.frame_1, text='This is a Label above a Button')
+        self.label_1.grid()
 
-    # Another Label, with its text set another way
-    label2 = ttk.Label(frame1)
-    label2['text'] = 'Later, we will put Labels BESIDE Buttons'
-    label2.grid()
+        # Buttons_Title_Change
 
-    root.mainloop()
+        self.change_title_btn = ttk.Button(self.frame_1, text='Change the Title (above)',
+                                           command=self.change_title)
+        self.change_title_btn.grid()
 
+        # Button_Quit
+        self.quit_button = ttk.Button(self.frame_1, text='Quit', command=lambda: self.quit())
+        self.quit_button.grid()
 
-def change_title(root):
-    # Make a new 8-letter title chosen randomly from 'A' to 'Z'.
-    new_title = ''
-    for k in range(8):  # @UnusedVariable
-        new_title = new_title + chr(ord('A') + random.randrange(26))
+        # Another Label, with its text set another way
+        self.label2 = ttk.Label(self.frame_1)
+        self.label2['text'] = 'Later, we will put Labels BESIDE Buttons'
+        self.label2.grid()
 
-    root.title(new_title)
-
-
-def close_window(root):
-    root.destroy()
+    # Functions
+    def change_title(self):
+        self.new_title = ''
+        for K in range(8):
+            self.new_title = self.new_title + chr(ord('A') + random.randrange(26))
+        self.title(f'{self.new_title}')
 
 
-# ----------------------------------------------------------------------
-# Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
-main()
+if __name__ == '__main__':
+    mainwin = Example(250, 120)
+
+    mainwin.mainloop()
+
