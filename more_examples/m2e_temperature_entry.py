@@ -13,7 +13,7 @@ Authors: David Mutchler and his colleagues
 """
 
 import tkinter
-from tkinter import ttk
+from tkinter import *
 
 
 class Temperature(object):
@@ -27,15 +27,15 @@ def main():
     temperature = Temperature()
 
     # Root window and Frame on it.
-    root = tkinter.Tk()
+    root = Tk()
 
-    frame = ttk.Frame(root, padding=20)
+    frame = Frame(root, padding=20)
     frame.grid()
 
     # The Entry box, into which the user can enter a temperature.
     # We store it in the Temperature object so that we can later
     # get its contents.
-    entry = ttk.Entry(frame, width=8)
+    entry = Entry(frame, width=8)
     entry.grid()
     temperature.entry_for_temperature = entry
 
@@ -43,16 +43,16 @@ def main():
     # temperature that the user enters in the Entry box.
     # We store the label in the Temperature object so that we can later
     # put the computed temperature on it.
-    label = ttk.Label(frame, text='Enter a temperature in the box')
+    label = Label(frame, text='Enter a temperature in the box')
     label.grid()
     temperature.label_for_temperature = label
 
     # Buttons that: get Entry value, compute and display temperature
-    button1 = ttk.Button(frame, text='Compute Fahrenheit from Celsius')
+    button1 = Button(frame, text='Compute Fahrenheit from Celsius')
     button1.grid()
     button1['command'] = lambda: fahrenheit_from_celsius(temperature)
 
-    button2 = ttk.Button(frame, text='Compute Celsius from Fahrenheit')
+    button2 = Button(frame, text='Compute Celsius from Fahrenheit')
     button2.grid()
     button2['command'] = lambda: celsius_from_fahrenheit(temperature)
 
