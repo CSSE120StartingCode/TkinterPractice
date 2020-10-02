@@ -1,2 +1,2 @@
-# TkinterPractice
-Practicing with Tkinter for Graphical User Interfaces in Python
+# TkinterPracticeArea
+Practicing with Tkinter for Graphical User Interfaces development in python
