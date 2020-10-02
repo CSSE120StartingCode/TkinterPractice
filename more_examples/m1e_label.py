@@ -9,36 +9,38 @@ Authors: David Mutchler and his colleagues
          at Rose-Hulman Institute of Technology.
 """
 
-import tkinter
+
+from tkinter import *
 from tkinter import ttk
 import random
 
 
 def main():
     # Root (main) window
-    root = tkinter.Tk()
+    """try to make smaller your code"""
+    root = .Tk()
     root.title('Hello!')
 
     # Frame
-    frame1 = ttk.Frame(root)
+    frame1 = Frame(root)
     frame1.grid()
 
     # Label
-    label = ttk.Label(frame1, text='This is a Label above a Button')
+    label = Label(frame1, text='This is a Label above a Button')
     label.grid()
 
     # Two buttons
-    change_title_button = ttk.Button(frame1,
+    change_title_button = Button(frame1,
                                      text='Change the Title (above)')
     change_title_button.grid()
     change_title_button['command'] = lambda: change_title(root)
 
-    quit_button = ttk.Button(frame1, text='Quit')
+    quit_button = Button(frame1, text='Quit')
     quit_button.grid()
     quit_button['command'] = lambda: close_window(root)
 
     # Another Label, with its text set another way
-    label2 = ttk.Label(frame1)
+    label2 = Label(frame1)
     label2['text'] = 'Later, we will put Labels BESIDE Buttons'
     label2.grid()
 
