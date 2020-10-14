@@ -96,4 +96,5 @@ def fahrenheit_from_celsius(temperature):
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
-main()
+if __name__ == "__main__":
+    main()
