@@ -32,6 +32,16 @@ def main():
     frame = ttk.Frame(root, padding=20)
     frame.grid()
 
+    # A Label which will display the temperature corresponding to the
+    # temperature that the user enters in the Entry box.
+    # We store the label in the Temperature object so that we can later
+    # put the computed temperature on it.
+   
+    label = ttk.Label(frame, text='Enter a temperature in the box')
+    label.grid()
+    temperature.label_for_temperature = label
+
+
     # The Entry box, into which the user can enter a temperature.
     # We store it in the Temperature object so that we can later
     # get its contents.
@@ -39,13 +49,8 @@ def main():
     entry.grid()
     temperature.entry_for_temperature = entry
 
-    # A Label which will display the temperature corresponding to the
-    # temperature that the user enters in the Entry box.
-    # We store the label in the Temperature object so that we can later
-    # put the computed temperature on it.
-    label = ttk.Label(frame, text='Enter a temperature in the box')
-    label.grid()
-    temperature.label_for_temperature = label
+ 
+    
 
     # Buttons that: get Entry value, compute and display temperature
     button1 = ttk.Button(frame, text='Compute Fahrenheit from Celsius')
@@ -55,6 +60,10 @@ def main():
     button2 = ttk.Button(frame, text='Compute Celsius from Fahrenheit')
     button2.grid()
     button2['command'] = lambda: celsius_from_fahrenheit(temperature)
+
+    label = ttk.Label(frame, text='\n <formula> \n fahrenheit = (celsius * (9 / 5)) + 32 ')
+    label.grid()
+    temperature.label_for_temperature = label
 
     root.mainloop()
 
